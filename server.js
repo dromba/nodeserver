@@ -19,6 +19,6 @@ app.use(bodyParser.json());
 
 app.use('/business', businessRoute);
 
-app.listen(PORT, function(){
+app.listen(process.env.PORT || 5000, function(){
   console.log('Server is running on Port:',PORT);
 });
